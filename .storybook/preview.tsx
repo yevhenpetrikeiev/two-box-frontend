@@ -1,6 +1,16 @@
 import type { Preview } from '@storybook/nextjs-vite';
 import '../app/globals.css';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 const preview: Preview = {
+  decorators: [
+    (Story) => {
+      return (
+        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+          <Story />
+        </AppRouterCacheProvider>
+      );
+    },
+  ],
   parameters: {
     controls: {
       matchers: {
