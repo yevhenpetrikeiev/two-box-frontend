@@ -32,7 +32,7 @@ export default function Navbar() {
         open={isDrawerOpen}
         onClose={() => setIsDrawerOpen(false)}
       >
-        <List sx={{ width: '60vw' }}>
+        <List className="md:w-[60vw]">
           <ListItem>Option 1</ListItem>
           <ListItem>Option 2</ListItem>
           <ListItem>Option 3</ListItem>
