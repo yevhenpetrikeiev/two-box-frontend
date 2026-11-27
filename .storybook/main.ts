@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 const config: StorybookConfig = {
   stories: [
     '../app/stories/**/*.mdx',
-    '../app/components/**/*.stories.@(js|jsx|mjs|ts|tsx)',
+    '../app/**/*.stories.@(js|jsx|mjs|ts|tsx)',
   ],
   addons: [
     '@chromatic-com/storybook',
